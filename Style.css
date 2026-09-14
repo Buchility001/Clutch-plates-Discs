@@ -1,0 +1,388 @@
+body {
+    background-color: white;
+    margin: 40px;
+    font-family: Georgia, san-serif;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+
+img {
+    width: 150px;
+    height:auto;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 100%;
+}
+
+.gallery img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 35px;
+    border: 4px solid black;
+    box-shadow: 5px 5px 10px gray;
+    transition: 0.3s;
+    cursor: pointer;
+    margin:10px;
+
+}
+button:hover{
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+h2{
+    color: #b22222;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+    line-height:25px;
+    font-style: italic;
+}
+
+ul{
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+footer a:hover{
+    color: gold;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, blue, purple);
+    padding: 15px;
+    position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color: gold;
+}
+ 
+ @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.gallery img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px gray;
+    animation: fadeIn 1s;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover{
+    transform: scale(1.05) rotate(3deg);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 40px;
+    color: darkblue;
+    text-align: center;
+    text-shadow: 2px 2px 3px gray;
+    margin-bottom: 10px;
+}
+
+.tagline{
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.testimonials{
+    padding:40px 20px;
+}
+
+.testimonials h2{
+    text-align:center;
+    color:darkred;
+}
+
+.testimonials{
+    padding:40px 20px;
+}
+
+.testimonials h2{
+    text-align:center;
+    color:darkred;
+}
+
+.testimonial{
+    background:white;
+    padding:20px;
+    margin:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.testimonial p{
+    font-style:italic;
+}
+
+.testimonial h4{
+    color:darkblue;
+}
+
+.call-btn{
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+    animation:pulse 1.5s infinite;
+}
+
+.call-btn:hover{
+    background: darkgreen;
+}
+
+    @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px gray;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px){
+
+    h1{
+        font-size: 28px;
+    }
+
+}
+#btn {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-form button{
+    background: blue;
+    color:white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background: green;
+}
+.contact-form label{
+    font-weight: bold;
+    color: #222;
+    margin-bottom: -10px;
+}
+/* Website animations */
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.gallery img {
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(2.05);
+}
+.gallery img.zoom {
+  transform: scale(2.15);
+  z-index: 10;
+  position: relative;
+}
+.nav-links a {
+  display: inline-block;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:active {
+  transform: translateY(-5px) scale(1.08);
+  text-shadow: 0 0 10px white;
+}
+/* Welcome heading animation */
+h1 {
+    animation: welcome 1.2s ease-out;
+}
+
+@keyframes welcome {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Button tap animation */
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
